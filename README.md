@@ -35,10 +35,10 @@ Time: XX ms (YY.XX%) | Memory: ZZ.Z MB (WW.WW%) - LeetSync
 ```
 
 Where:
--'**XX ms**' is the execution time.
--'**YY.XX%***' is the percentile rank based on the execution time.
--'**ZZ.Z MB**' is the memory used.
--'**WW.WW%**' is the percentile rank based on memory usage.
+- '**XX ms**' is the execution time.
+- '**YY.XX%**' is the percentile rank based on the execution time.
+- '**ZZ.Z MB**' is the memory used.
+- '**WW.WW%**' is the percentile rank based on memory usage.
 
 ## Usage
 
