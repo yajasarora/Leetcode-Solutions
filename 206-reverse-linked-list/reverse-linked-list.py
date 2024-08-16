@@ -10,12 +10,13 @@ class Solution(object):
         :rtype: ListNode
         """
         if not head:
-            return None
-        prev=None
+            return
+        prev = None
         while head:
-            temp=head.next
-            head.next=prev
-            prev=head
-            head=temp
-
+            temp = head.next
+            head.next = prev
+            prev = head
+            head = temp
         return prev
+        
+        
