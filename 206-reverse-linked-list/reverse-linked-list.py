@@ -19,5 +19,3 @@ class Solution(object):
         head.next=None
 
         return newhead
-        
-
