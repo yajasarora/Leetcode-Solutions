@@ -11,11 +11,12 @@ class Solution(object):
         """
         if not head:
             return None
+        prev=None
+        cur=head
+        while cur:
+            temp=cur.next
+            cur.next=prev
+            prev=cur
+            cur=temp
 
-        newhead=head
-        if head.next:
-            newhead=self.reverseList(head.next)
-            head.next.next=head
-        head.next=None
-
-        return newhead
+        return prev
