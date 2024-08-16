@@ -12,11 +12,10 @@ class Solution(object):
         if not head:
             return None
         prev=None
-        cur=head
-        while cur:
-            temp=cur.next
-            cur.next=prev
-            prev=cur
-            cur=temp
+        while head:
+            temp=head.next
+            head.next=prev
+            prev=head
+            head=temp
 
         return prev
