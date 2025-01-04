@@ -1,22 +1,12 @@
-import re
-
 class Solution(object):
-    def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        s=s.lower()
-        s=re.sub(r'\W+|_','',s)
-        print(s)
-        i,j =0,len(s)-1
-        for i in range(len(s)):
-            if s[i]==s[j]:
-                i+=1
-                j-=1
-                continue
+    def isPalindrome(self, s,i=0):
+        s="".join([char.lower() for char in s if char.isalnum()])
+        n=len(s)
+        def check(i):
+            if i>=n//2:
+                return True
+            if s[i]==s[n-i-1]:
+                return check(i+1)
             else:
                 return False
-
-        return True
-        
+        return check(0)
