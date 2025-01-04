@@ -1,5 +1,5 @@
 class Solution(object):
-    def isPalindrome(self, s,i=0):
+    def isPalindrome(self, s):
         s="".join([char.lower() for char in s if char.isalnum()])
         n=len(s)
         def check(i):
