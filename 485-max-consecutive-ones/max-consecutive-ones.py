@@ -6,10 +6,11 @@ class Solution(object):
         """
         consec=0
         count=0
-        for i in range(len(nums)):
-            if nums[i]==1:
-                count+=1
+        for i in nums:
+            if i==0:
                 consec=max(consec,count)
-            else:
                 count=0
+                continue
+            count+=1
+        consec=max(count,consec)
         return consec
